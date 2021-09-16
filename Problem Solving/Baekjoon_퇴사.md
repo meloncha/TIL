@@ -9,7 +9,7 @@
 
 - 이 문제는 DFS로 풀 수 있어서 난이도가 낮은 것 같다.
 - 만약 N이 커지는 경우에도 해결할 수 있도록 DP에 대한 이해도를 높이는 것이 좋아보인다.
-
+- https://www.acmicpc.net/problem/14501
 
 ```java
 import java.io.BufferedReader;
