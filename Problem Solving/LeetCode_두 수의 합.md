@@ -22,7 +22,7 @@
 - O(N^2) => O(NlogN) => O(N) 으로 고민을 하며 효율적으로 풀 수 있는 좋은 문제
 - https://leetcode.com/problems/two-sum
 
-```
+```java
 class Solution {
     
     // 덧셈하여 target을 만들 수 있는 배열의 두 숫자 인덱스를 리턴하기
