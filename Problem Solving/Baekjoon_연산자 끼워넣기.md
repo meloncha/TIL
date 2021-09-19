@@ -39,12 +39,12 @@ public class BOJ14888_연산자끼워넣기 {
             operators[i] = Integer.parseInt(st.nextToken());
         }
 
-        dfs(0, new int[N - 1]);
+        recur(0, new int[N - 1]);
 
         System.out.println(max + "\n" + min);
     }
 
-    private static void dfs(int idx, int[] select) {
+    private static void recur(int idx, int[] select) {
         if (idx == N - 1) {
             calc(select);
             return;
@@ -54,7 +54,7 @@ public class BOJ14888_연산자끼워넣기 {
             if (operators[i] > 0) {
                 select[idx] = i;
                 operators[i]--;
-                dfs(idx + 1, select);
+                recur(idx + 1, select);
                 operators[i]++;
             }
         }
